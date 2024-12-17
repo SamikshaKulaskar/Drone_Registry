@@ -22,7 +22,7 @@ export const Web3Provider = ({ children }) => {
           setAccount(accounts[0]);
 
           // Load the contract
-          const contractAddress = "0x166EeCf9376645AAF41a2c541c05F6bA22117364"; 
+          const contractAddress = "0x1C08eF487582f394736562ffE1CD3DC1Bb104400"; 
           const _contract = new ethers.Contract(contractAddress, DroneRegistryABI.abi, signer);
 
           setProvider(_provider);

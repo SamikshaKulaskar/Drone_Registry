@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { ethers } from "ethers"; // Corrected import
+import { ethers } from "ethers"; 
 import DroneRegistryABI from './abi/DroneRegistry.json'; //Abi file path 
 
-const contractAddress = "0x166EeCf9376645AAF41a2c541c05F6bA22117364"; //Contract address
+const contractAddress = "0x1C08eF487582f394736562ffE1CD3DC1Bb104400"; //Contract address
 
 export default function DroneRegistry() {
     const [account, setAccount] = useState(null);
@@ -19,7 +19,6 @@ export default function DroneRegistry() {
             if (window.ethereum) {
                 const _provider = new ethers.providers.Web3Provider(window.ethereum); 
 
-                // Request account access if needed
                 await window.ethereum.request({ method: "eth_requestAccounts" });
 
                 const _contract = new ethers.Contract(contractAddress, DroneRegistryABI, _provider.getSigner());

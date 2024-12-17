@@ -16,7 +16,7 @@ function App() {
         <>
           <p className="text-center">Connected Wallet: {walletAddress}</p>
           <RegisterDrone walletAddress={walletAddress} />
-          <FetchDrone /> {/* Display all drones */}
+          <FetchDrone /> {/* This displays all the drones */}
         </>
       )}
     </div>
