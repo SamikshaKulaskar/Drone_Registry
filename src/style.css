@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #007bff;
+  }
+  
+  input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
